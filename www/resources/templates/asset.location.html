@@ -1,84 +1,81 @@
-<div class="page no-swipeback track_page" data-page="asset.location">
-	<div class="navbar  ">
-        <div class="navbar-inner">
-            <div class="left">
-            	<a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>         
-            </div>
-            <div class="left navbar_title ">{{Name}}</div>
-           	<div class="right">
-           		<!-- <a href="#" class="link refreshTrack"><i class="f7-icons icon-other-location-refresh"></i></a> -->
-                <!-- <a href="#" class="link buttonAssetMenu"><i class="f7-icons icon-header-menu2"></i></a>       -->     
-           	</div>
+<div class="navbar  ">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>         
+        </div>
+        <div class="center sliding ">{{Name}}</div>
+        <div class="right">
+            <!-- <a href="#" class="link refreshTrack"><i class="f7-icons icon-other-location-refresh"></i></a> -->
+            <!-- <a href="#" class="link buttonAssetMenu"><i class="f7-icons icon-header-menu2"></i></a>       -->     
         </div>
     </div>
-
-    <div class="page-content">
-		
-    	<div class="position_map "> 
-            <div class="map" id="map"></div>
-            <div class="float_button_wrapper request_location_button_wrapper bg-dealer requestLocation">
-                <a href="#" class="link color-white request_location_button">
-                    <i class="f7-icons icon-other-location-refresh color-white"></i>
-                    <span>{{@global.LANGUAGE.ASSET_TRACK_MSG12}}</span>                    
-                </a>
-            </div>
-            <div class="float_button_wrapper pano_button_wrapper bg-blue">
-                <a href="#" class="link color-white pano_button" data-lat="{{Lat}}" data-lng="{{Lng}}">
-                    <i class="pano_preview_img"></i>                                   
-                </a>
-            </div>
-            <div class="float_button_wrapper route_button_wrapper bg-dealer">
-                <a href="#" class="link color-white routeButton" data-lat="{{Lat}}" data-lng="{{Lng}}" >
-                    <i class="f7-icons icon-other-route color-white"></i>
-                    <span>{{@global.LANGUAGE.ASSET_TRACK_MSG16}}</span>                    
-                </a>
-            </div>
-    	</div>
-        <div class="position_bottom">
-            <div class="list-block media-list no-hairlines no-hairlines-between ">                
-                <ul >                    
-                    <li class="item-content">
-                        <div class="item-media"><i class="f7-icons icon-other-location-address2 color-dealer"></i></div>
-                        <div class="item-inner">                     
-                            <div class="item-text display_address"><b>{{Address}}</b></div>  
-                            <div class="item-subtext color-dealer">{{Coords}}</div>                       
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="position_bottom_divider"></div>
-            <div class="row no-gutter">               
-                
-                <div class="col-35 ">                    
-                    <p>{{@global.LANGUAGE.ASSET_TRACK_MSG00}}</p>                     
-                </div>
-                <div class="col-65 ">                   
-                    <p class="position_data position_time">{{Time}}</p>
-                </div>
-
-                <div class="col-35 ">                    
-                    <p class="">{{@global.LANGUAGE.ASSET_TRACK_MSG01}}</p>                     
-                </div>
-                <div class="col-65 ">                   
-                    <p class="position_data">{{Direction}}</p>
-                </div>
-
-                <div class="col-35 ">                    
-                    <p>{{@global.LANGUAGE.ASSET_TRACK_MSG03}}</p>                     
-                </div>
-                <div class="col-65 ">                   
-                    <p class="position_data position_mileage">{{Mileage}}</p>
-                </div>
-
-                <div class="col-35 ">                    
-                    <p>{{@global.LANGUAGE.ASSET_TRACK_MSG02}}</p>                     
-                </div>
-                <div class="col-65 ">                   
-                    <p class="position_data position_speed">{{Speed}}</p>
-                </div>                
-            </div>
-            
-        </div>
-    </div>
-	
 </div>
+
+<div class="pages">
+    <div class="page no-swipeback track_page" data-page="asset.location">
+        <div class="page-content">
+            
+            <div class="position_map "> 
+                <div class="map" id="map"></div>
+                <div class="float_button_wrapper request_location_button_wrapper bg-dealer requestLocation">
+                    <a href="#" class="link color-white request_location_button">
+                        <i class="f7-icons icon-location-refresh color-white"></i>
+                        <span>{{@global.LANGUAGE.ASSET_TRACK_MSG12}}</span>                    
+                    </a>
+                </div>
+                <div class="float_button_wrapper pano_button_wrapper bg-blue">
+                    <a href="#" class="link color-white pano_button" data-lat="{{Lat}}" data-lng="{{Lng}}">
+                        <i class="pano_preview_img"></i>                                   
+                    </a>
+                </div>
+            </div>
+            <div class="position_bottom">
+                <div class="list-block media-list no-hairlines no-hairlines-between ">                
+                    <ul >                    
+                        <li class="item-content">
+                            <div class="item-media"><i class="f7-icons icon-other-asset-position color-dealer"></i></div>
+                            <div class="item-inner">                     
+                                <div class="item-text display_address"><b>{{Address}}</b></div>
+                                <div class="item-subtext color-dealer">{{Coords}}</div>                         
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="position_bottom_divider"></div>
+                <div class="row no-gutter">               
+                    
+                    <div class="col-35 ">                    
+                        <p>{{@global.LANGUAGE.ASSET_TRACK_MSG00}}</p>                     
+                    </div>
+                    <div class="col-65 ">                   
+                        <p class="position_data position_time">{{Time}}</p>
+                    </div>
+
+                    <div class="col-35 ">                    
+                        <p class="">{{@global.LANGUAGE.ASSET_TRACK_MSG01}}</p>                     
+                    </div>
+                    <div class="col-65 ">                   
+                        <p class="position_data">{{Direction}}</p>
+                    </div>
+
+                    <div class="col-35 ">                    
+                        <p>{{@global.LANGUAGE.ASSET_TRACK_MSG03}}</p>                     
+                    </div>
+                    <div class="col-65 ">                   
+                        <p class="position_data position_mileage">{{Mileage}}</p>
+                    </div>
+
+                    <div class="col-35 ">                    
+                        <p>{{@global.LANGUAGE.ASSET_TRACK_MSG02}}</p>                     
+                    </div>
+                    <div class="col-65 ">                   
+                        <p class="position_data position_speed">{{Speed}}</p>
+                    </div>                
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+    

@@ -1,92 +1,97 @@
-<div class="page asset_tracking_interval" data-page="asset.tracking.interval">
-	<div class="navbar">
-        <div class="navbar-inner">
-            <div class="left">
-                <a href="#" class="link back "> <i class="f7-icons icon-header-arrow-back"></i></a>
-            </div>
-            <div class="left navbar_title">{{@global.LANGUAGE.ASSET_MSG05}}</div>     
-            <!-- <div class="right">
-                    <a href="#" class="link deleteAllNotifications" ><i class="f7-icons icon-header-delete"></i></a>
-                </div>    -->    
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="link back "> <i class="f7-icons icon-header-arrow-back"></i></a>
         </div>
-    </div>
-	<div class="page-content " >
-        <input type="hidden" name="trackingIntervalImei" value="{{IMEI}}">
-        <div class="content-block-title">{{@global.LANGUAGE.ASSET_MSG05}}</div>
-        <div class="content-block content-block-text">
-            {{@global.LANGUAGE.PROMPT_MSG024}}
-        </div>    
-
-        
-
-        <div class="content-block content-block-list-text">
-            <div class="row no-gutter">               
-                <div class="col-35 ">                    
-                    <p class="color-red">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG00}}:</p>                     
-                </div>
-                <div class="col-65 ">                   
-                    <p class="position_data one-line-text color-red">{{Name}}</p>
-                </div>
-                <div class="col-35 ">                    
-                    <p class="">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG01}}:</p>                     
-                </div>
-                <div class="col-65 ">                   
-                    <p class="position_data one-line-text ">{{IMEI}}</p>
-                </div>
-                <!-- <div class="col-35 ">                    
-                    <p class="">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG02}}:</p>                     
-                </div>
-                <div class="col-65 ">                   
-                    <p class="position_data one-line-text ">{{IMSI}}</p>
-                </div> -->
-            </div> 
-        </div>
-
-        <div class="list-block list-block-radio no-hairlines no-hairlines-between">
-            <ul class="row no-gutter">           
-                <li class="col-50">
-                    <label class="label-radio item-content">                
-                        <input type="radio" name="tracking-period" value="1" checked="checked">
-                        <div class="item-media">
-                            <i class="icon icon-form-radio"></i>
-                        </div>
-                        <div class="item-inner">
-                            <div class="item-title">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG13}}</div>
-                        </div>
-                    </label>
-                </li>            
-                <li class="col-50">
-                    <label class="label-radio item-content">
-                        <input type="radio" name="tracking-period" value="2">
-                        <div class="item-media">
-                            <i class="icon icon-form-radio"></i>
-                        </div>
-                        <div class="item-inner">
-                            <div class="item-title">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG14}}</div>
-                        </div>
-                    </label>
-                </li>            
-            </ul>
-        </div>
-        
-        <div class="content-block mt-8">
-            <div class="tracking-interval-hint bg-dealer color-white">
-                <p>{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG06}} <span class="trackingInterval">12 {{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG10}}</span> </p>
-                <div class="tracking-interval-hint-devider"></div>
-                <p class="fs-18"><b>$ <span class="trackingCost">{{Cost}}</span> </b></p>
-            </div>
-            <div class="range-slider">
-                <input type="range" name="rangeInput" min="0" max="4" value="0" step="1">
-            </div>
-            <div class="row no-gutter color-gray fs-12">
-                <div class="bottom-indicator bottom-indicator-0 col-20 text-a-l color-dealer"><i class="icon-ti-dot icon-other-dot"></i><div>1/12{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG05}}</div></div>
-                <div class="bottom-indicator bottom-indicator-1 col-10 text-a-c"><i class="icon-ti-dot icon-other-dot"></i><div>1/6{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG05}}</div></div>
-                <div class="bottom-indicator bottom-indicator-2 col-35 text-a-c"><i class="icon-ti-dot icon-other-dot"></i><div>1/1{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG05}}</div></div>
-                <div class="bottom-indicator bottom-indicator-3 col-10 text-a-c"><i class="icon-ti-dot icon-other-dot"></i><div>1/30{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG04}}</div></div>
-                <div class="bottom-indicator bottom-indicator-4 col-20 text-a-r"><i class="icon-ti-dot icon-other-dot"></i><div>1/1{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG04}}</div></div>
-            </div>
-            <a href="#" class="link button button-green upgradeNowButton disabled fs-18" data-paylink="{{PayLink}}" data-payplancode="{{PayPlanCode}}">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG08}}</a>
-        </div>
-
+        <div class="center sliding">{{@global.LANGUAGE.ASSET_MSG05}}</div>     
+        <!-- <div class="right">
+                <a href="#" class="link deleteAllNotifications" ><i class="f7-icons icon-header-delete"></i></a>
+            </div>    -->    
     </div>
 </div>
+
+<div class="pages">
+    <div class="page asset_tracking_interval" data-page="asset.tracking.interval">
+        
+        <div class="page-content " >
+            <input type="hidden" name="trackingIntervalImei" value="{{IMEI}}">
+            <div class="content-block-title">{{@global.LANGUAGE.ASSET_MSG05}}</div>
+            <div class="content-block content-block-text">
+                {{@global.LANGUAGE.PROMPT_MSG024}}
+            </div>
+
+            <div class="content-block content-block-list-text">
+                <div class="row no-gutter">               
+                    <div class="col-35 ">                    
+                        <p class="color-dealer">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG00}}:</p>                     
+                    </div>
+                    <div class="col-65 ">                   
+                        <p class="position_data one-line-text color-dealer">{{Name}}</p>
+                    </div>
+                    <div class="col-35 ">                    
+                        <p class="">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG01}}:</p>                     
+                    </div>
+                    <div class="col-65 ">                   
+                        <p class="position_data one-line-text ">{{IMEI}}</p>
+                    </div>
+                    <!-- <div class="col-35 ">                    
+                        <p class="">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG02}}:</p>                     
+                    </div>
+                    <div class="col-65 ">                   
+                        <p class="position_data one-line-text ">{{IMSI}}</p>
+                    </div> -->
+                </div> 
+            </div>
+
+            <div class="list-block list-block-radio no-hairlines no-hairlines-between">
+                <ul class="">           
+                   
+                    <li class="">
+                        <label class="label-radio item-content">                
+                            <input type="radio" name="tracking-period" value="1" checked="checked">
+                            <!-- <div class="item-media">
+                                <i class="icon icon-form-radio"></i>
+                            </div> -->
+                            <div class="item-inner">
+                                <div class="item-title">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG13}}</div>
+                            </div>
+                        </label>
+                    </li>            
+                    <li class="">
+                        <label class="label-radio item-content">
+                            <input type="radio" name="tracking-period" value="2">
+                            <!-- <div class="item-media">
+                                <i class="icon icon-form-radio"></i>
+                            </div> -->
+                            <div class="item-inner">
+                                <div class="item-title">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG14}}</div>
+                            </div>
+                        </label>
+                    </li>  
+                   
+                </ul>
+            </div>
+            
+            <div class="content-block mt-8">
+                <div class="tracking-interval-hint bg-dealer color-white">
+                    <p>{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG06}} <span class="trackingInterval">12 {{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG10}}</span> </p>
+                    <div class="tracking-interval-hint-devider"></div>
+                    <p class="fs-18"><b>$ <span class="trackingCost">{{Cost}}</span> </b></p>
+                </div>
+                <div class="range-slider">
+                    <input type="range" name="rangeInput" min="0" max="4" value="0" step="1">
+                </div>
+                <div class="row no-gutter color-gray fs-12">
+                    <div class="bottom-indicator bottom-indicator-0 col-20 text-a-l color-dealer"><i class="icon-ti-dot icon-other-dot"></i><div>1/12{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG05}}</div></div>
+                    <div class="bottom-indicator bottom-indicator-1 col-10 text-a-c"><i class="icon-ti-dot icon-other-dot"></i><div>1/6{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG05}}</div></div>
+                    <div class="bottom-indicator bottom-indicator-2 col-35 text-a-c"><i class="icon-ti-dot icon-other-dot"></i><div>1/1{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG05}}</div></div>
+                    <div class="bottom-indicator bottom-indicator-3 col-10 text-a-c"><i class="icon-ti-dot icon-other-dot"></i><div>1/30{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG04}}</div></div>
+                    <div class="bottom-indicator bottom-indicator-4 col-20 text-a-r"><i class="icon-ti-dot icon-other-dot"></i><div>1/1{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG04}}</div></div>
+                </div>
+                <a href="#" class="link button button-green upgradeNowButton disabled fs-14"data-paylink="{{PayLink}}" data-payplancode="{{PayPlanCode}}">{{@global.LANGUAGE.ASSET_TRACKING_INTERVAL_MSG08}}</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+    

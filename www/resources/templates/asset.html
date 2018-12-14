@@ -1,118 +1,125 @@
-<div class="page asset_page" data-page="asset">
-	<div class="navbar ">
-        <div class="navbar-inner">
-            <div class="left">
-            	<a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>            	
-            </div>
-            <div class="left navbar_title">{{Name}}</div>
-           	<div class="right">
-           		<a href="#" class="link editAssetButton"><i class="f7-icons icon-header-settings"></i></a>
-           	</div>
+<div class="navbar ">
+    <div class="navbar-inner">
+        <div class="left">
+        	<a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>
         </div>
-    </div>    
-
-    <div class="page-content">
-    	<div class="asset_wrapper">
-    		<div class="asset-top ">	  
-    			<!-- <div class="asset-top-img" style="{{#if AssetImg}}background-image: url('{{AssetImg}}'){{/if}}"></div> -->
-    			<div class="asset-top-img editAssetButton">
-    				{{#if AssetImg}}{{AssetImg}}{{/if}}
-    			</div>
-	    	</div>
-			
-			<div class="list-block media-list no-hairlines asset_buttons">	        
-		        <ul>
-		            <li class="item-content">
-		              	<div class="item-media"><i class="f7-icons color-dealer icon-other-asset-status"></i></div>
-		              	<div class="item-inner">
-		              		<div class="item-title-row">
-		              	  		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG00}}</div>
-		              	  		<div class="item-after">
-		                			<a href="#" class="button button-fill bg-dealer loadPageAssetStatus">{{@global.LANGUAGE.COM_MSG12}}</a>
-		                		</div>
-		              	  	</div>
-		              	</div>
-		            </li>
-		            <li class="item-content">
-		              	<div class="item-media"><i class="f7-icons color-dealer icon-other-asset-position"></i></div>
-		              	<div class="item-inner">
-			            	<div class="item-title-row">
-			            		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG01}}</div>
-			              		<div class="item-after">
-			               			<a href="#" class="button button-fill bg-dealer loadPageAssetPosition">{{@global.LANGUAGE.COM_MSG12}}</a>
-			               		</div>
-			            	</div>	                
-		              	</div>
-		            </li>	            
-		            <li class="item-content">
-		              	<div class="item-media"><i class="f7-icons color-dealer icon-other-asset-geolock"></i></div>
-		              	<div class="item-inner">
-		              		<div class="item-title-row">
-		                		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG02}}</div>
-		                		<div class="item-after">
-		                			<div class="row button_on_off_wrapper">
-										<a href="#" class="button button-fill bg-dealer col-50 setGeolockState {{#if Geolock}}disabled{{/if}}" data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
-		            					<a href="#" class="button button-fill bg-dealer col-50 setGeolockState {{#if Geolock}}{{else}}disabled{{/if}}" data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a>
-		            					<!-- <a href="#" class="button button-fill bg-dealer col-50 setGeolockState " data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
-		            					<a href="#" class="button button-fill bg-dealer col-50 setGeolockState " data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a> -->
-		                			</div>
-		            			               			
-		            		    </div>
-		                	</div>
-		              	</div>
-		            </li>
-		            <li class="item-content">
-		              	<div class="item-media"><i class="f7-icons color-dealer icon-other-asset-immobilisation"></i></div>
-		              	<div class="item-inner">
-		              		<div class="item-title-row">
-		                		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG03}}</div>
-		                		<div class="item-after">
-		                			<div class="row button_on_off_wrapper">
-										<a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState {{#if Immobilise}}disabled{{/if}}" data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
-		            					<a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState {{#if Immobilise}}{{else}}disabled{{/if}}" data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a>
-		            					<!-- <a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState " data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
-		            					<a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState " data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a> -->
-		                			</div>
-		            			               			
-		            		    </div>
-		                	</div>
-		              	</div>
-		            </li>
-		            <li class="item-content">
-		              	<div class="item-media"><i class="f7-icons color-dealer icon-other-asset-alarm2"></i></div>
-		              	<div class="item-inner">
-			            	<div class="item-title-row">
-			            		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG04}}</div>
-			              		<div class="item-after">
-			               			<a href="#" class="button button-fill bg-dealer loadPageAlarm">{{@global.LANGUAGE.COM_MSG12}}</a>
-			               		</div>
-			            	</div>	                
-		              	</div>
-		            </li>	 
-		            <li class="item-content">
-		              	<div class="item-media"><i class="f7-icons color-dealer icon-other-asset-tracking-interval"></i></div>
-		              	<div class="item-inner">
-		              		<div class="item-title-row">
-		                		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG05}}</div>
-		                		<div class="item-after">
-			               			<a href="#" class="button button-fill bg-dealer loadPageTrackingInterval">{{@global.LANGUAGE.ASSET_MSG06}}</a>
-			               		</div>
-		                	</div>
-		              	</div>
-		            </li>	                  
-		                      
-		        </ul>	        
-		    </div>
-
-		    <div class="asset-bottom">
-	            {{@global.LANGUAGE.COM_MSG30}}: <span class="remaining_counter">{{Remainings}}</span> {{@global.LANGUAGE.COM_MSG31}}
-	        </div>
-    	</div>
-	    	
-    	
-		
-            
-        
+        <div class="center sliding">{{Name}}</div>
+       	<div class="right">
+       		<a href="#" class="link editAssetButton"><i class="f7-icons icon-header-settings"></i></a>
+       	</div>
     </div>
-	
+</div>
+
+<div class="pages">
+	<div class="page asset_page" data-page="asset">
+	    <div class="page-content">
+	    	<div class="asset_wrapper">
+	    		<div class="asset-top ">
+	    			<!-- <div class="asset-top-img" style="{{#if AssetImg}}background-image: url('{{AssetImg}}'){{/if}}"></div> -->
+	    			<div class="asset-top-img editAssetButton">
+	    				{{#if AssetImg}}{{AssetImg}}{{/if}}
+	    			</div>
+		    	</div>
+
+				<div class="list-block media-list no-hairlines asset_buttons">
+			        <ul>
+			            <li class="item-content">
+			              	<div class="item-media"><i class="f7-icons icon-other-asset-status"></i></div>
+			              	<div class="item-inner">
+			              		<div class="item-title-row">
+			              	  		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG00}}</div>
+			              	  		<div class="item-after">
+			                			<a href="#" class="button button-fill bg-dealer loadPageAssetStatus">{{@global.LANGUAGE.COM_MSG12}}</a>
+			                		</div>
+			              	  	</div>
+			              	</div>
+			            </li>
+			            <li class="item-content">
+			              	<div class="item-media"><i class="f7-icons  icon-other-asset-position"></i></div>
+			              	<div class="item-inner">
+				            	<div class="item-title-row">
+				            		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG01}}</div>
+				              		<div class="item-after">
+				               			<a href="#" class="button button-fill bg-dealer loadPageAssetPosition">{{@global.LANGUAGE.COM_MSG12}}</a>
+				               		</div>
+				            	</div>
+			              	</div>
+			            </li>
+			            <li class="item-content">
+			              	<div class="item-media"><i class="f7-icons icon-other-asset-geolock"></i></div>
+			              	<div class="item-inner">
+			              		<div class="item-title-row">
+			                		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG02}}</div>
+			                		<div class="item-after">
+			                			<div class="row button_on_off_wrapper">
+											<a href="#" class="button button-fill bg-dealer col-50 setGeolockState {{#if Geolock}}disabled{{/if}}" data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
+			            					<a href="#" class="button button-fill bg-dealer col-50 setGeolockState {{#if Geolock}}{{else}}disabled{{/if}}" data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a>
+			            					<!-- <a href="#" class="button button-fill bg-dealer col-50 setGeolockState " data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
+			            					<a href="#" class="button button-fill bg-dealer col-50 setGeolockState " data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a> -->
+			                			</div>
+
+			            		    </div>
+			                	</div>
+			              	</div>
+			            </li>
+			            <li class="item-content">
+			              	<div class="item-media"><i class="f7-icons  icon-other-asset-immobilisation"></i></div>
+			              	<div class="item-inner">
+			              		<div class="item-title-row">
+			                		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG03}}</div>
+			                		<div class="item-after">
+			                			<div class="row button_on_off_wrapper">
+											<a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState {{#if Immobilise}}disabled{{/if}}" data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
+			            					<a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState {{#if Immobilise}}{{else}}disabled{{/if}}" data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a>
+			            					<!-- <a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState " data-state="on">{{@global.LANGUAGE.COM_MSG32}}</a>
+			            					<a href="#" class="button button-fill bg-dealer col-50 setImmobiliseState " data-state="off">{{@global.LANGUAGE.COM_MSG33}}</a> -->
+			                			</div>
+
+			            		    </div>
+			                	</div>
+			              	</div>
+			            </li>
+			            <li class="item-content">
+			              	<div class="item-media"><i class="f7-icons  icon-other-asset-alarm2"></i></div>
+			              	<div class="item-inner">
+				            	<div class="item-title-row">
+				            		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG04}}</div>
+				              		<div class="item-after">
+				               			<a href="#" class="button button-fill bg-dealer loadPageAlarm">{{@global.LANGUAGE.COM_MSG12}}</a>
+				               		</div>
+				            	</div>
+			              	</div>
+			            </li>
+			            {{#if rcFlag}}
+			            <li class="item-content">
+			              	<div class="item-media"><i class="f7-icons  icon-other-asset-tracking-interval"></i></div>
+			              	<div class="item-inner">
+			              		<div class="item-title-row">
+			                		<div class="item-title">{{@global.LANGUAGE.ASSET_MSG05}}</div>
+			                		<div class="item-after">
+				               			<a href="#" class="button button-fill bg-dealer loadPageTrackingInterval">{{@global.LANGUAGE.ASSET_MSG06}}</a>
+				               		</div>
+			                	</div>
+			              	</div>
+			            </li>
+			            {{/if}}
+
+			        </ul>
+			    </div>
+
+				{{#if rcFlag}}
+				<div class="asset-bottom">
+		            {{@global.LANGUAGE.COM_MSG30}}: <span class="remaining_counter">{{Remainings}}</span> {{@global.LANGUAGE.COM_MSG31}}
+		        </div>
+				{{/if}}
+
+	    	</div>
+
+
+
+
+
+	    </div>
+
+	</div>
 </div>

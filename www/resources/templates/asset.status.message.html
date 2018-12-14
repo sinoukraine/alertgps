@@ -1,16 +1,16 @@
-<div class="page asset_status_page" data-page="asset.status.message">
-	<div class="navbar ">
-        <div class="navbar-inner">
-            <div class="left">
-            	<a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>            	
-            </div>
-            <div class="left navbar_title ">{{AssetName}}</div>
-           	
+<div class="navbar ">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>             
         </div>
-    </div>    
+        <div class="center sliding">{{AssetName}}</div>            
+    </div>
+</div>    
 
+<div class="pages">
+    <div class="page asset_status_page" data-page="asset.status.message">
     <div class="page-content">
-    	<input type="hidden" name="Acc" value="{{Acc}}">
+        <input type="hidden" name="Acc" value="{{Acc}}">
         <input type="hidden" name="Relay" value="{{Relay}}">
         <input type="hidden" name="Charger" value="{{Charger}}">
         <input type="hidden" name="Battery" value="{{Battery}}">
@@ -19,20 +19,21 @@
         <input type="hidden" name="GSM" value="{{GSM}}">
         <input type="hidden" name="GPRS" value="{{GPRS}}">
         <input type="hidden" name="Direction" value="{{Direction}}" data-number="{{DirectionNumber}}">
+        <input type="hidden" name="GPRS" value="{{GPRS}}">
         <input type="hidden" name="EngineHours" value="{{EngineHours}}">
         <input type="hidden" name="Mileage" value="{{Mileage}}">
 
 
-    	{{#if AssetImg}}
-    	<div class="asset-top">	  
-    		<div class="asset-top-img" style=""><img src="{{AssetImg}}" class="item_asset_img" alt=""></div>
+        {{#if AssetImg}}
+        <div class="asset-top">   
+            <div class="asset-top-img" style=""><img src="{{AssetImg}}" class="item_asset_img" alt=""></div>
             <!-- <div class="asset-top-img">
                 {{AssetImg}}
             </div> -->
-	    </div>
-		{{/if}} 
+        </div>
+        {{/if}} 
 
-		<div class="content-block status_block_top text-a-c">
+        <div class="content-block status_block_top text-a-c">
             <div class="row no-gutter">
                 <div class="col-33">                    
                     <i class="f7-icons icon-other-status-date color-dealer"></i>
@@ -53,7 +54,7 @@
             </div>
         </div>
 
-        <div class="list-block media-list  status_block_list">                
+        <div class="list-block  status_block_list">                
             <ul class="row no-gutter">
                 <div class="col-100">
                     <li class="item-content">
@@ -74,7 +75,7 @@
                     <li class="item-content open-acc {{#if AccGreen}}color-green{{else}}color-red{{/if}} " >
                         <div class="item-media"><i class="f7-icons icon-other-status-acc2"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text">                               
+                            <div class="item-title">                               
                                 {{Acc}}      
                             </div>                                          
                         </div>
@@ -86,7 +87,7 @@
                     <li class="item-content open-relay">
                         <div class="item-media"><i class="f7-icons icon-other-status-relay color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text ">
+                            <div class="item-title ">
                                 {{Relay}}                           
                             </div>                                          
                         </div>
@@ -99,7 +100,7 @@
                     <li class="item-content open-charger">
                         <div class="item-media"><i class="f7-icons icon-other-status-voltage2 color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text ">
+                            <div class="item-title ">
                                 {{Charger}}                        
                             </div>                                          
                         </div>
@@ -111,7 +112,7 @@
                     <li class="item-content open-battery">
                         <div class="item-media"><i class="f7-icons icon-other-data-battery-level color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text ">
+                            <div class="item-title ">
                                 {{Battery}}                        
                             </div>                                          
                         </div>
@@ -123,7 +124,7 @@
                     <li class="item-content open-power">
                         <div class="item-media"><i class="f7-icons icon-other-status-power color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text ">
+                            <div class="item-title ">
                                 {{Power}}                   
                             </div>                                          
                         </div>
@@ -135,7 +136,7 @@
                     <li class="item-content open-gps">
                         <div class="item-media"><i class="f7-icons icon-other-status-satellite2 color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text ">
+                            <div class="item-title ">
                                 {{GPS}}                   
                             </div>                                          
                         </div>
@@ -147,7 +148,7 @@
                     <li class="item-content open-gsm">
                         <div class="item-media"><i class="f7-icons icon-other-status-tower color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text ">
+                            <div class="item-title ">
                                 {{GSM}}                     
                             </div>                                          
                         </div>
@@ -159,7 +160,7 @@
                     <li class="item-content open-gprs">
                         <div class="item-media"><i class="f7-icons icon-other-status-signal2 color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text ">
+                            <div class="item-title ">
                                 {{GPRS}}                     
                             </div>                                          
                         </div>
@@ -167,35 +168,35 @@
                 </div>
                 {{/if}}   
                 <!-- {{#if Direction}}   
-                              <div class="col-50">                 
-                                  <li class="item-content open-direction">
-                                      <div class="item-media"><i class="f7-icons icon-other-data-direction color-dealer"></i></div>
-                                      <div class="item-inner">                        
-                                          <div class="item-text ">
-                                              {{Direction}}                     
-                                          </div>                                          
-                                      </div>
-                                  </li>
-                              </div>
-                              {{/if}}    -->              
-                <!-- {{#if Mileage}} 
-                     <div class="col-50">
-                         <li class="item-content open-mileage " >
-                             <div class="item-media"><i class="f7-icons icon-other-status-mileage color-dealer"></i></div>
-                             <div class="item-inner">                        
-                                 <div class="item-text">                               
-                                     {{Mileage}}      
-                                 </div>                                          
-                             </div>
-                         </li>
-                     </div>
-                     {{/if}}    -->     
+                <div class="col-50">                 
+                    <li class="item-content open-direction">
+                        <div class="item-media"><i class="f7-icons icon-other-data-direction color-dealer"></i></div>
+                        <div class="item-inner">                        
+                            <div class="item-title ">
+                                {{Direction}}                     
+                            </div>                                          
+                        </div>
+                    </li>
+                </div>
+                {{/if}}                 
+                {{#if Mileage}} 
+                <div class="col-50">
+                    <li class="item-content open-mileage " >
+                        <div class="item-media"><i class="f7-icons icon-other-status-mileage color-dealer"></i></div>
+                        <div class="item-inner">                        
+                            <div class="item-title">                               
+                                {{Mileage}}      
+                            </div>                                          
+                        </div>
+                    </li>
+                </div>
+                {{/if}} -->        
                 {{#if EngineHours}} 
                 <div class="col-50">
                     <li class="item-content open-engineHours " >
-                        <div class="item-media"><i class="f7-icons icon-engine-hours color-dealer"></i></div>
+                        <div class="item-media"><i class="f7-icons icon-other-status-engine-hours color-dealer"></i></div>
                         <div class="item-inner">                        
-                            <div class="item-text">                               
+                            <div class="item-title">                               
                                 {{EngineHours}}      
                             </div>                                          
                         </div>
@@ -213,6 +214,8 @@
             </div>
         </div>      
     </div>
-	
+    
 </div>
+</div>
+
 
