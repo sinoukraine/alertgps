@@ -1,17 +1,15 @@
-<div class="navbar ">
-    <div class="navbar-inner">
-        <div class="left">
-        	<a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>            
+<div class="page edit_page" data-page="asset.edit">
+	<div class="navbar ">
+        <div class="navbar-inner">
+            <div class="left">
+            	<a href="#" class="back link "> <i class="f7-icons icon-header-arrow-back"></i></a>            
+            </div>
+            <div class="left navbar_title navbar_title_index">{{@global.LANGUAGE.ASSET_EDIT_MSG12}}</div>
+           	<div class="right">
+           		<a href="#" class="link  saveAssetEdit"><i class="f7-icons icon-header-apply"></i></a>
+           	</div>
         </div>
-        <div class="center sliding ">{{@global.LANGUAGE.ASSET_EDIT_MSG12}}</div>
-       	<div class="right">
-       		<a href="#" class="link  saveAssetEdit"><i class="f7-icons icon-header-apply"></i></a>
-       	</div>
     </div>
-</div>
-
-<div class="pages">
-	<div class="page edit_page" data-page="asset.edit">	
 
     <div class="page-content">
     		<div class="asset-top uploadPhoto">	    		
@@ -24,13 +22,13 @@
     		IMEI: <span class="asset_edit_imei">{{IMEI}}</span> <span class="asset_edit_prdtname">({{PRDTName}})</span>
     	</div>
 
-    	<div class="list-block no-hairlines list_asset_details">
+    	<div class="list-block media-list no-hairlines list_asset_details">
     		<input type="hidden" name="IMEI" value="{{IMEI}}">    		
 		  	<ul>
-		  		<li class="item-divider with-top-divider">{{@global.LANGUAGE.ASSET_EDIT_MSG06}}</li>		    	
+		  		<li class="item-divider with-top-divider"><b>{{@global.LANGUAGE.ASSET_EDIT_MSG06}}</b></li>		    	
 		    	<li>
 		    	  	<div class="item-content">
-		    	  		<div class="item-media"><i class="f7-icons icon-asset-details-attributes "></i></div>
+		    	  		<div class="item-media"><i class="f7-icons icon-other-asset-attributes color-dealer"></i></div>
 		    	  	  	<div class="item-inner">
 		    	  	  	  	<div class="item-title label ">{{@global.LANGUAGE.ASSET_EDIT_MSG01}}</div>
 		    	  	  	  	<div class="item-input">
@@ -97,8 +95,8 @@
 
 		    	<li>
 		    	  	<div class="item-content">
-		    	  		<div class="item-media"><i class="f7-icons icon-asset-details-unit "></i></div>
-		    	  	  	<div class="item-inner ">
+		    	  		<div class="item-media"><i class="f7-icons icon-other-asset-unit color-dealer"></i></div>
+		    	  	  	<div class="item-inner border-top">
 		    	  	  	  	<div class="item-title label ">{{@global.LANGUAGE.ASSET_EDIT_MSG02}}</div>
 		    	  	  	  	<div class="item-input select_arrow">
 		    	  	  	  	  	<!-- <input type="text" placeholder="{{@global.LANGUAGE.ASSET_EDIT_MSG02}}" name="Unit" value="{{Unit}}"> -->
@@ -112,10 +110,10 @@
 		    	  	  	</div>
 		    	  	</div>
 		    	</li>
-		    	<li class="item-divider ">{{@global.LANGUAGE.ASSET_EDIT_MSG03}}</li>
+		    	<li class="item-divider with-top-divider"><b>{{@global.LANGUAGE.ASSET_EDIT_MSG03}}</b></li>
 		    	<li>
 		    	  	<div class="item-content">
-		    	  		<div class="item-media"><i class="f7-icons icon-asset-details-mileage "></i></div>
+		    	  		<div class="item-media"><i class="f7-icons icon-other-asset-mileage color-dealer"></i></div>
 		    	  	  	<div class="item-inner">
 		    	  	  	  	<div class="item-title label ">{{@global.LANGUAGE.ASSET_EDIT_MSG04}}</div>
 		    	  	  	  	<div class="item-input">
@@ -144,5 +142,4 @@
         
     </div>
 	
-</div>
 </div>

@@ -141,7 +141,7 @@ window.LanguagePackages= {
 		"ALARM_MSG14": "No Driver Alert",
 		"ALARM_MSG15": "Input 1 Alarm",
 		"ALARM_MSG16": "Input 1 Low Alarm",
-		"ALARM_MSG17": "Low Internal Battery",
+		"ALARM_MSG17": "Low Battery",
 		"ALARM_MSG18": "Main Power Disconnection",
 		"ALARM_MSG19": "SOS Duress",
 		"ALARM_MSG20": "Positive Input",
