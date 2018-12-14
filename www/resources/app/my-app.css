@@ -1267,7 +1267,6 @@ body.with-panel-left-cover .panel-overlay{
   height: 28px;
   width: 18px;
   border-radius: 0px;
-
   cursor: pointer;
   background-image: url('../images/range-slider-icon.svg');
   background-color: transparent;
@@ -1283,7 +1282,6 @@ body.with-panel-left-cover .panel-overlay{
   height: 28px;
   width: 18px;
   border-radius: 0px;
-
   cursor: pointer;
   background-image: url('../images/range-slider-icon.svg');
   background-color: transparent;
@@ -1291,6 +1289,8 @@ body.with-panel-left-cover .panel-overlay{
   background-size: cover;
   background-position: center center;
 }
+
+
 
 	.tracking-interval-hint{
 		padding: 24px 32px;

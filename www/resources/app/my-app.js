@@ -1042,6 +1042,7 @@ App.onPageInit('asset.tracking.interval', function (page) {
     var rangeInput = $$(page.container).find('input[name="rangeInput"]');
     var trackingPeriod = $$(page.container).find('input[name="tracking-period"]');
     var assetImeiInput = $$(page.container).find('input[name=trackingIntervalImei]').val();
+    var countryCode = getUserinfo().UserInfo.CountryCode;
     var params = {
     	trackingIntervalEl: $$(page.container).find('.trackingInterval'),
 	    trackingCostEl: $$(page.container).find('.trackingCost'),
@@ -2638,7 +2639,7 @@ function loadPageAsset(){
 
 function loadPageRechargeCredit(){
     var MinorToken = getUserinfo().MinorToken;
-    //var CountryCode = getUserinfo().UserInfo.CountryCode;
+    // var CountryCode = getUserinfo().UserInfo.CountryCode;
 
     /*AUS*/
     /*var buttons = {
